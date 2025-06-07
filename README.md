@@ -1,5 +1,5 @@
-SmartNews Backend
-SmartNews Backend, haber içeriklerini yöneten ve kullanıcıya sunan bir RESTful API servisidir. Proje, Node.js ve Express.js kullanılarak geliştirilmiş, MySQL veritabanı ile çalışmakta ve kimlik doğrulama için JWT kullanılmaktadır.
+News Backend
+News Backend, haber içeriklerini yöneten ve kullanıcıya sunan bir RESTful API servisidir. Proje, Node.js ve Express.js kullanılarak geliştirilmiş, MySQL veritabanı ile çalışmakta ve kimlik doğrulama için JWT kullanılmaktadır.
 
 Özellikler
 RESTful API mimarisi

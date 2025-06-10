@@ -51,7 +51,6 @@ news-backend/
 ├── middlewares/        # Middleware fonksiyonlar
 ├── models/             # Mongoose modelleri
 ├── routes/             # API rotaları
-├── utils/              # Yardımcı fonksiyonlar
 ├── .env                # Ortam değişkenleri
 ├── app.js              # Uygulama giriş noktası
 ├── package.json

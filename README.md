@@ -45,9 +45,8 @@ GUARDIAN_KEY=your_guardian_key_here
 ## ▶️ Uygulamayı Çalıştırma
 
 ```bash
-# Geliştirme modunda çalıştır
-npm run dev
-
+# Projeyi Çalıştırmak İçin
+node server.js
 ## 🔐 Kimlik Doğrulama
 
 JWT (JSON Web Token) ile kullanıcı kimlik doğrulaması yapılmaktadır. Giriş yapan kullanıcıya bir token verilir ve bu token, korunan rotalara erişimde kullanılır.

@@ -30,9 +30,17 @@ Projenin kök dizinine `.env` dosyası ekleyin ve aşağıdaki ortam değişkenl
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-```
+DB_HOST=localhost
+DB_NAME=news
+DB_USER=root
+DB_PASS=your_password_here
+
+JWT_SECRET=your_jwt_secret_here
+JWT_EXPIRES_IN=1d
+
+NEWSAPI_KEY=your_newsapi_key_here
+GUARDIAN_KEY=your_guardian_key_here
+
 
 ## ▶️ Uygulamayı Çalıştırma
 

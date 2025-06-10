@@ -1,61 +1,75 @@
-News Backend
-News Backend, haber içeriklerini yöneten ve kullanıcıya sunan bir RESTful API servisidir. Proje, Node.js ve Express.js kullanılarak geliştirilmiş, MySQL veritabanı ile çalışmakta ve kimlik doğrulama için JWT kullanılmaktadır.
+# 📰 News Backend
 
-Özellikler
-RESTful API mimarisi
+Bu proje, haber içeriği yönetimi için oluşturulmuş bir backend API uygulamasıdır. Proje, haberlerin kategorilere ayrılmasını, kullanıcı yönetimini ve haber içeriğinin servis edilmesini sağlar.
 
-Sequelize ORM ile MySQL veritabanı yönetimi
+## 🚀 Teknolojiler
 
-JWT ile kimlik doğrulama
+- **Node.js**
+- **Express.js**
+- **MongoDB & Mongoose**
+- **JWT Authentication**
+- **dotenv**
+- **CORS**
+- **bcryptjs**
 
-Kullanıcı, haber, kategori gibi yapılar
+## 📦 Kurulum
 
-Middleware ile hata yönetimi
+```bash
+# Depoyu klonla
+git clone https://github.com/muhsinlight/news-backend.git
 
-.env ile gizli yapılandırma
+# Proje klasörüne geç
+cd news-backend
 
-Kullanılan Teknolojiler
-Node.js
-
-Express.js
-
-MySQL
-
-Sequelize
-
-JWT (jsonwebtoken)
-
-bcrypt
-
-dotenv
-
-1-Depoyu klonlayın:
-git clone https://github.com/muhsinlight/smartnews-backend.git
-
-cd smartnews-backend
-
-2-Gerekli paketleri yükleyin:
-
+# Bağımlılıkları yükle
 npm install
+```
 
-3-.env dosyasını oluşturun ve şu şekilde yapılandırın:
+### 🛠️ Ortam Değişkenleri
 
-PORT=3000
+Projenin kök dizinine `.env` dosyası ekleyin ve aşağıdaki ortam değişkenlerini tanımlayın:
 
-DB_HOST=localhost
-
-DB_USER=root
-
-DB_PASSWORD=your_password
-
-DB_NAME=smartnews_db
-
-DB_PORT=3306
-
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
-4-Uygulamayı başlatın:
+## ▶️ Uygulamayı Çalıştırma
 
-npm start
+```bash
+# Geliştirme modunda çalıştır
+npm run dev
+```
 
+## 📁 Proje Yapısı
+
+```
+news-backend/
+│
+├── controllers/        # API logic
+├── middlewares/        # Middleware fonksiyonlar
+├── models/             # Mongoose modelleri
+├── routes/             # API rotaları
+├── utils/              # Yardımcı fonksiyonlar
+├── .env                # Ortam değişkenleri
+├── app.js              # Uygulama giriş noktası
+├── package.json
+```
+
+## 🔐 Kimlik Doğrulama
+
+JWT (JSON Web Token) ile kullanıcı kimlik doğrulaması yapılmaktadır. Giriş yapan kullanıcıya bir token verilir ve bu token, korunan rotalara erişimde kullanılır.
+
+## 📬 API Rotaları (Örnek)
+
+| Yöntem | Rota             | Açıklama                 |
+|--------|------------------|--------------------------|
+| POST   | `/api/auth/login`   | Kullanıcı girişi           |
+| POST   | `/api/auth/register`| Yeni kullanıcı kaydı       |
+| GET    | `/api/news/`        | Tüm haberleri getir        |  |
+
+## 📌 Katkıda Bulunma
+
+Katkılar memnuniyetle karşılanır! Lütfen önce bir issue açın, ardından bir pull request gönderin.
 
